@@ -31,6 +31,9 @@ RUN curl -O http://www.arch.info.mie-u.ac.jp/~sasaki/hobby/software/EzGraph-mast
 
 WORKDIR /workspaces/tyupro/EzGraph-master
 
+RUN rm ./config.guess && \
+    curl "http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess;hb=HEAD" -o config.guess
+
 RUN ./configure; make; make install
 
 RUN echo "/usr/local/lib" > /etc/ld.so.conf.d/usr-local-lib.conf && ldconfig -v
