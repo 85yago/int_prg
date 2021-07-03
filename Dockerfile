@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 
-RUN apt update && apt install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     git \
     gcc \
