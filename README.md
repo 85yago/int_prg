@@ -4,7 +4,7 @@
 
 ## 使い方
 
-    git clone https://github.com/85yago/kyopro-docked.git
+    git clone https://github.com/85yago/int_prg.git
 
 gitはなくてもいいです（zipで落として展開すれば良いし、git管理しなくてもよい）が、dockerはOSの合わせたものを導入してください。
 
